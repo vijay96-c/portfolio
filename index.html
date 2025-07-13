@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vijayakarthick K Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f0fb;
+      color: #333;
+    }
+
+    header {
+      background: #4b2991;
+      color: #fff;
+      padding: 15px 30px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    main {
+      padding-top: 100px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section {
+      padding: 60px 20px;
+      margin-bottom: 40px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(75, 41, 145, 0.1);
+    }
+
+    section h2 {
+      color: #4b2991;
+      margin-bottom: 20px;
+    }
+
+    .skill-boxes {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill-box {
+      background: linear-gradient(135deg, #4b2991, #7c57c2);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      flex: 1 1 250px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      padding: 12px 20px;
+      background: #4b2991;
+      color: white;
+      border: none;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: #3a1e70;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Vijayakarthick K</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home">
+    <h2>Hi, I'm Vijayakarthick K</h2>
+    <p>Information Technology student passionate about building innovative web solutions and exploring deep learning technologies. Currently pursuing my degree while working on exciting projects.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a 3rd year Information Technology student with a passion for web development and artificial intelligence. When I’m not coding, you can find me contributing to open-source projects, participating in hackathons, or exploring the latest advancements in deep learning. Currently seeking internship opportunities to apply my skills and learn from industry professionals while completing my degree.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-boxes">
+      <div class="skill-box">
+        <h3>Web Development</h3>
+        <p>Full stack development with React, Node.js, and modern JavaScript frameworks. Experience building responsive, accessible web applications.</p>
+      </div>
+      <div class="skill-box">
+        <h3>Deep Learning</h3>
+        <p>Building and training neural networks with TensorFlow and PyTorch. Special interest in computer vision and NLP applications.</p>
+      </div>
+      <div class="skill-box">
+        <h3>App Development</h3>
+        <p>Cross-platform mobile app development using React Native and Flutter. Published apps with thousands of downloads.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Coming soon: List of academic, personal and internship projects.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" action="mailto:mrvijay572@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+</main>
+
+</body>
+</html>
